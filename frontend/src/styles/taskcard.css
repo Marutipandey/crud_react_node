@@ -1,0 +1,89 @@
+.task-card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  transition: 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+}
+
+/* HEADER */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.task-header h3 {
+  font-size: 16px;
+  color: #111827;
+}
+
+/* BADGES */
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge.completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+/* ACTIONS */
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* BUTTONS */
+.toggle {
+  flex: 1;
+  padding: 8px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delete {
+  flex: 1;
+  padding: 8px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.edit {
+  flex: 1;
+  padding: 8px;
+  background: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .task-actions {
+    flex-direction: column;
+  }
+}
